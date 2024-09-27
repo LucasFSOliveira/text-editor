@@ -1,12 +1,7 @@
 name: Continuous Integration
 
-on:     # This workflow is triggered on pushes and PRs to the master branch.
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
+on: [push, pull_request] # This workflow is triggered on pushes and PRs to the master branch.
+  
 
 jobs:
   continuous-integration:
